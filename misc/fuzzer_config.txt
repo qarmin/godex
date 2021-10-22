@@ -1,0 +1,23 @@
+use_parent_methods: true
+add_to_tree: true
+test_one_class_multiple_times: true
+
+custom_classes:
+Component
+ComponentDynamicExposer
+Components3DGizmoPlugin
+DatabagDynamicFetcher
+DynamicQuery
+ECS
+Entity2D
+Entity3D
+EventsEmitterDynamicFetcher
+EventsReceiverDynamicFetcher
+GodexWorldFetcher
+PipelineECS
+ScriptEcs
+SharedComponentResource
+StorageDynamicFetcher
+System
+SystemBundle
+WorldECS
