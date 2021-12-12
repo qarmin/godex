@@ -138,6 +138,14 @@ jobs:
           name: memory_usage
           path: fuzzer/memory_usage.txt
 
+      - name: Store test artifacts
+        uses: actions/upload-artifact@v2
+        with:
+         name: ${{ github.job }}
+         path: godot/bin/*
+         retention-days: 14
+
+
       - name: Check fuzzer output
         run: |
           modules/godex/misc/check_ci_log.py sanitizers_log.txt
